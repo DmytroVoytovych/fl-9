@@ -1,0 +1,171 @@
+    /* 1) figer 2 */
+    
+    @media print {
+        @page {
+            margin-top: 30px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        body {
+            background-color: transparent;
+            text-shadow: none;
+            box-shadow: none;
+        }
+        .tm-sidebar,
+        #about,
+        .heading,
+        .blocks,
+        #ideas,
+        #contact,
+        [src="img/contact.jpg"] {
+            display: none;
+        }
+        .tm-main-content {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .tm-banner {
+            height: 150px;
+            width: 600px;
+            margin-left: -25px;
+            padding: unset;
+        }
+        .pad {
+            padding: 0 0 0 0;
+        }
+        .tm-team-description-container h2 {
+            color: blue;
+        }
+        .flex-2-col {
+            display: block;
+        }
+        .tm-team-description-container {
+            max-width: none;
+        }
+        [src="img/image.jpg"] {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -15px;
+        }
+    }
+    
+    @media screen {
+        /* 2) figer 3 */
+        .thumbnail {
+            border-radius: 125px;
+        }
+        .tm-section-title-box h2 {
+            font-size: 52px;
+            color: #ff0000;
+        }
+        .tm-section-title-box:hover {
+            background: #2a9bdb;
+            font-size: 52px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        /* 3) */
+        p::first-letter {
+            color: #76cdd7;
+            font-size: 30px;
+        }
+        /* 4) figer 4  */
+        .tm-sidebar,
+        .tm-content-box {
+            box-shadow: 0px 0px 4px 2px #b2b1b1;
+        }
+        /* 5) figer 5 */
+        .tm-content-box {
+            position: relative;
+        }
+        .tm-content-box:not(:empty):before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 26px solid #2a9bdb;
+            border-right: 130px solid transparent;
+            z-index: 1;
+        }
+        .blocks .flex-2-col {
+            display: none;
+        }
+        /* 6) */
+        #ideas .flex-item>h2 {
+            color: gainsboro;
+            letter-spacing: 5px;
+        }
+        /* 7) */
+        h2+p {
+            font-style: italic;
+        }
+        /* 8) figure 6 */
+        p:not(.tm-banner-text) {
+            line-height: 1.6;
+            text-indent: 20px;
+        }
+        /* 9) figure 8 */
+        .heading h2 {
+            text-align: center;
+            color: #76cdd7;
+        }
+        .pad ol a {
+            color: #000000;
+        }
+        .pad ol a:visited {
+            color: #dcdcdc;
+        }
+        .pad ol a:hover {
+            color: #76cdd7;
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+        .pad ol a.text::after {
+            content: "New";
+            color: #ff0000;
+            font-size: 8px;
+            vertical-align: super;
+        }
+        /* 10) figure 9 */
+        .blocks .box:nth-child(odd) {
+            background-color: #dcdcdc;
+        }
+        .blocks .box h2 {
+            font-size: 45px;
+        }
+        .blocks .box p {
+            font-size: 22px;
+            line-height: 1.6;
+            text-indent: initial;
+            color: #000000;
+        }
+        .blocks .box p::first-letter {
+            color: #000000;
+        }
+        /* 11) figure 10 */
+        .tm-nav-item:not(:last-of-type) {
+            border-bottom: 2px dotted #dcdcdc;
+        }
+        /* 12) figure 11 */
+        #contact_name {
+            color: #ff0000;
+        }
+        #contact_subject {
+            color: #ff0000;
+        }
+        .mandatory-field::after {
+            content: "*";
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .submit-btn {
+            color: #ff0000;
+        }
+        .submit-btn:hover {
+            background: #2a9bdb;
+            color: #ffffff;
+        }
+    }
