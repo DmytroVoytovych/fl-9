@@ -7,7 +7,8 @@ let sin = Math.sin(radians);
 let cos = Math.cos(radians);
 let c = parseFloat(Math.sqrt(a * a + b * b - 2 * a * b * cos).toFixed(2));
 let square = Math.round(1 / 2 * a * b * sin);
-let perimeter = a + b + c;
+let perimeter = parseFloat(a + b + c).toFixed(2);
+
 if (c <= 0) {
     console.log('Invalid data');
 } else if (isNaN(c)) {
